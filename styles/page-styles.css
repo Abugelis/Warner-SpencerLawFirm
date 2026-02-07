@@ -1,0 +1,164 @@
+/* ------------------------------------------------------------------------ CSS RERSET ------------------------------------------------------------------------------------------ */
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+/* accessibility for keyboards */
+a:focus {
+  outline: 2px solid olive;
+  outline-offset: 2px;
+}
+
+
+/* --------------------------------------------------- ABOUT US PAGE ---------------------------------------------------------- */
+
+.about-us-page {
+    padding: 4rem 2rem 2rem 2rem;
+}
+
+.about-us-page img {
+    border-radius: 10px;
+}
+
+.about-us-page h2 {
+    text-align: center;
+}
+
+.about-us-page-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 0 2rem 0;
+}
+
+/* --------------------------------------------------- PRACTICE AREAS PAGE ---------------------------------------------------------- */
+
+.practice-flex {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 2rem;
+}
+
+.practice-flex-heading {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.practice-flex-heading h2 {
+    padding: 0 1rem;
+}
+
+
+.cards-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.practice-page-card {
+    border-top: 1px solid silver;
+    text-decoration: none;
+    color: black;
+}
+
+.practice-page-card:last-child {
+    border-bottom: 1px solid silver;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease, padding 0.3s ease;
+}
+
+.practice-page-card:hover {
+    background-color: #9C7A2F;
+    color: white;
+}
+
+.practice-page-card:hover .card-text {
+        padding: 2rem 3rem;
+    }
+
+.card-decoration {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-accent-line {
+    height: 0.1rem;
+    width: 10rem;
+    background-color: #9C7A2F;
+}
+
+/* -------------------------------------------------------------------------- LAPTOP -------------------------------------------------------------------------------------------*/
+
+@media (min-width: 1024px) {
+
+    .about-us-page {
+        padding: 4rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+
+    .practice-page-headeing {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+        padding: 0 0 4rem 0;
+    }
+
+    .practice-card {
+        width: 16rem;
+        height: 14rem;
+    }
+
+    .contact-side-by-side-form {
+        padding: 4rem 8rem;
+    }
+
+    .card-text {
+        padding: 2rem 0;
+    }
+
+    .practice-card:hover .card-text {
+        padding: 2rem 3rem;
+    }
+
+    .card-accent-line {
+        width: 10rem;
+        height: 0.2rem;
+    }
+
+    .practice-flex {
+        padding: 4rem 12rem;
+    }
+
+    .practice-area-page {
+        display: flex;
+        flex-direction: row;
+        gap: 6rem;
+        padding: 4rem;
+    }
+}
