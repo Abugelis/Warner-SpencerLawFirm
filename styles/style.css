@@ -420,6 +420,12 @@ header {
     padding: 0 0 1rem 0;
 }
 
+select {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 0;
+}
+
 .form-group input, select, textarea {
     padding: 0.8rem;
 }
