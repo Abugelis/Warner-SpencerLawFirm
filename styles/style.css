@@ -459,7 +459,7 @@ header {
 }
 
 .btn.btn-primary:hover {
-    background-color: olive;
+    background-color: #9C7A2F;
 }
 
 /* -------------------------------------------------------------------------- FOOTER -------------------------------------------------------------------------------------*/
@@ -519,7 +519,7 @@ header {
 }
 
 .footer-column a:hover {
-    color: olive;
+    color: #1E3D2B;
 }
 
 /* ------------------------------------------------------------ EDGE CASE: small mobile screens -------------------------------------------------------------------------------- */
@@ -756,6 +756,10 @@ header {
 
     .about-classic {
         padding: 2rem 12rem;
+    }
+
+    .about-us-page {
+        padding: 4rem 12rem;
     }
 
     .practice-classic-grid {

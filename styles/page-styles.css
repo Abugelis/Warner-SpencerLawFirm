@@ -54,15 +54,15 @@ a:focus {
     padding: 4rem 2rem;
 }
 
-.practice-flex-heading {
+.practice-page-heading {
     display: flex;
     flex-direction: column;
     text-align: center;
     padding-bottom: 2rem;
 }
 
-.practice-flex-heading h2 {
-    padding: 0 1rem;
+.practice-page-heading h2 {
+    padding: 0 0 1rem 0;
 }
 
 
@@ -74,7 +74,7 @@ a:focus {
 .practice-page-card {
     border-top: 1px solid silver;
     text-decoration: none;
-    color: black;
+    color: #1E3D2B;
 }
 
 .practice-page-card:last-child {
@@ -87,6 +87,11 @@ a:focus {
     justify-content: space-between;
     align-items: center;
     transition: background-color 0.3s ease, color 0.3s ease, padding 0.3s ease;
+    padding: 1rem 0;
+}
+
+.practice-page-card h3 {
+    color: inherit;
 }
 
 .practice-page-card:hover {
@@ -95,8 +100,8 @@ a:focus {
 }
 
 .practice-page-card:hover .card-text {
-        padding: 2rem 3rem;
-    }
+    padding: 1rem 2rem;
+}
 
 .card-decoration {
     display: flex;
@@ -108,6 +113,8 @@ a:focus {
     width: 10rem;
     background-color: #9C7A2F;
 }
+
+
 
 /* --------------------------------------------------- PRACTICE AREAS PAGES ---------------------------------------------------------- */
 
@@ -187,6 +194,10 @@ a:focus {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .practice-flex {
+        padding: 4rem;
+    }
 }
 
 /* -------------------------------------------------------------------------- LAPTOP -------------------------------------------------------------------------------------------*/
@@ -201,7 +212,7 @@ a:focus {
     }
 
 
-    .practice-page-headeing {
+    .practice-page-heading {
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -215,7 +226,7 @@ a:focus {
     }
 
     .contact-side-by-side-form {
-        padding: 4rem 8rem;
+        padding: 4rem;
     }
 
     .card-text {
@@ -232,7 +243,7 @@ a:focus {
     }
 
     .practice-flex {
-        padding: 4rem 12rem;
+        padding: 4rem;
     }
 
     .practice-area-page {
@@ -241,7 +252,6 @@ a:focus {
         gap: 6rem;
         padding: 4rem;
     }
-
 
     .practice-area-page {
         display: flex;
@@ -304,6 +314,14 @@ a:focus {
     .profile-page {
         padding: 4rem;
     }
+
+    .team-circle-image-cards {
+        padding: 4rem;
+    }
+
+    .practice-page-card:hover .card-text {
+        padding: 2rem 3rem;
+    }
 }
 
 /* -------------------------------------------------------------------------- DESKTOP -------------------------------------------------------------------------------------------*/
@@ -316,6 +334,26 @@ a:focus {
 
     .profile-page {
         padding: 4rem 12rem;
+    }
+
+    .team-circle-image-cards {
+        padding: 4rem 12rem;
+    }
+
+    .about-us-page {
+        padding: 4rem 12rem;
+    }
+
+    .practice-flex {
+        padding: 4rem 12rem;
+    }
+
+    .card-text {
+        padding: 2rem 0;
+    }
+
+    .practice-page-card:hover .card-text {
+        padding: 2rem 3rem;
     }
 
 }
